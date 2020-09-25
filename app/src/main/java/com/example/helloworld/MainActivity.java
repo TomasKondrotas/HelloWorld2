@@ -2,9 +2,12 @@ package com.example.helloworld;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+
+import static android.graphics.Color.rgb;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,6 +22,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void ChangeText(View view) {
+
         this.TvMain.setText("Text Was Changed");
+    }
+
+    public void ColorChange(View view) {
+        this.TvMain.setTextColor(Color.rgb(200, 0, 0));
     }
 }
